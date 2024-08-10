@@ -1,0 +1,32 @@
+The Observable design pattern is a behavioral pattern that allows objects to establish a one-to-many dependency relationship. In this pattern, an object, called the "subject" or "observable," maintains a list of its dependents, known as "observers." When the state of the subject changes, it automatically notifies all its observers, ensuring that they are updated accordingly.
+
+The Observable pattern solves the problem of maintaining consistency and synchronization between objects that depend on each other's state. It provides a way for objects to communicate and stay in sync without having direct knowledge of each other. This decoupling promotes loose coupling between objects, making the code more modular, flexible, and maintainable.
+
+Here's an example to illustrate the Observable pattern:
+
+Let's say we have a weather station that measures temperature, humidity, and pressure. We want to display this information on multiple devices, such as a mobile app, a web page, and a smartwatch. Instead of tightly coupling the weather station with each device, we can use the Observable pattern.
+
+The weather station becomes the subject (observable), and the devices become observers. Each device registers itself as an observer with the weather station. Whenever the weather station's measurements change, it notifies all the registered observers, and they update their displays accordingly.
+
+This pattern allows us to add or remove observers dynamically without modifying the subject or other observers. It also enables us to easily extend the system by adding new observers or subjects without affecting the existing code.
+
+In summary, the Observable pattern provides a flexible and decoupled way for objects to communicate and stay synchronized, promoting modularity and maintainability in the codebase.
+
+##################################### implementation ###################################################
+
+The Observable pattern is typically implemented using a combination of classes and interfaces. Here's a simplified explanation of how it can be implemented in simple language:
+
+Define an interface for the observers: Create an interface that defines the methods that the observers will use to receive updates from the subject. For example, you can have an interface called Observer with a method like update().
+
+Create a subject class: Create a class that represents the subject, in this case, the weather station. This class should have methods to register and unregister observers, as well as a method to notify all registered observers when the measurements change. Let's call this class WeatherStation.
+
+Implement the subject class: In the WeatherStation class, maintain a list of registered observers. When an observer registers, add it to the list. When an observer unregisters, remove it from the list. When the measurements change, iterate over the list of observers and call the update() method on each observer to notify them of the change.
+
+Implement the observer class(es): Create one or more classes that implement the Observer interface. These classes will define the behavior of the observers when they receive updates from the subject. For example, you can have classes like MobileApp, WebPage, and SmartWatch that implement the Observer interface and update their displays accordingly in the update() method.
+
+Register observers with the subject: In your application code, create instances of the observer classes and register them with the WeatherStation subject using the registration method provided by the subject class.
+
+Test the implementation: Simulate changes in the weather station's measurements and observe how the registered observers update their displays accordingly.
+
+By following this implementation, you achieve loose coupling between the subject and the observers. The subject doesn't need to know the specific details of each observer, and the observers don't need to know the inner workings of the subject. This promotes modularity and maintainability in your codebase, as you can easily add or remove observers without modifying the subject or other observers.
+

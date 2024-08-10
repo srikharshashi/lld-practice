@@ -1,0 +1,25 @@
+Design patterns are reusable solutions to common problems that occur in software design. They provide a way to solve these problems in a structured and efficient manner. By using design patterns, developers can create software that is more flexible, maintainable, and scalable.
+
+Design patterns are like blueprints for building software. They capture the best practices and proven solutions that have been developed and refined over time by experienced software engineers. These patterns can be applied to various aspects of software design, such as object creation, structuring relationships between objects, and handling complex behaviors.
+
+There are several categories of design patterns, including creational patterns, structural patterns, and behavioral patterns. Creational patterns focus on object creation mechanisms, structural patterns deal with object composition and relationships, and behavioral patterns address communication and interaction between objects.
+
+By understanding and applying design patterns, developers can improve the quality of their code, enhance code reusability, and make their software more robust and maintainable. Design patterns are an essential tool in the toolbox of any software engineer, helping them to write cleaner, more efficient, and more maintainable code.
+
+############################################################################################################################################################
+
+"is a"
+
+The "is a" relationship in object-oriented programming is represented by an arrow pointing from the subclass to the superclass. It indicates that the subclass inherits the properties and behaviors of the superclass. For example:
+
+Subclass ➡️ Superclass
+
+-- Inheritance Basically --
+
+#############################################################################################################################################################
+
+"has-a"
+
+In object-oriented programming, the "has-a" relationship, also known as composition or aggregation, represents a relationship where one class contains or is composed of one or more instances of another class. This relationship indicates that the containing class "has" instances of the contained class as its members.
+
+----> :- arow used for has a 

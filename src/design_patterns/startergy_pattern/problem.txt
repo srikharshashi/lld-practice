@@ -1,0 +1,28 @@
+Problem :- 
+
+Assume a vehicle class with two methods drive() and display()
+
+Assume three subblclasses called Normal Vehicle,Sports and Offroad 
+
+Now let us say Normal has same implementation for drive as parent but offroad and Sports have a unique implementation
+And for display let us assume Sports and normal have same but new unique implementation but Off Road has a durable display
+As the capabilities of Parent class grows and Each unique implementation of a feature happens 
+The problem here is duplication of code happens everytime a vehile wants to implement a new feature 
+Like sometime they want to use the same implementation but it has to be with in a class in a method.
+A method cannot have inheritance so it becomes difficult to re-use existing and already implemedted functionality
+##########################
+Formal Problem :-  
+The Strategy design pattern addresses the problem of code duplication and inflexibility in the context of varying behaviors across different subclasses. 
+Here's a detailed breakdown:
+
+Problem Description
+Code Duplication: When subclasses have unique implementations for certain methods, code duplication occurs if similar logic is needed across multiple subclasses.
+Inflexibility: As the parent class evolves and new features are added, it becomes difficult to manage and reuse existing functionality without duplicating code.
+Inheritance Limitation: Methods cannot inherit behavior selectively, leading to challenges in reusing code across different subclasses.
+
+Solution with Strategy Pattern
+The Strategy pattern solves these problems by:
+
+Encapsulating Behaviors: It encapsulates varying behaviors (e.g., drive and display methods) into separate strategy classes.
+Composition Over Inheritance: It uses composition instead of inheritance, allowing objects to change their behavior at runtime by switching strategy objects.
+Reducing Code Duplication: By defining a family of algorithms (strategies), it allows different classes to reuse these algorithms without duplicating code.
