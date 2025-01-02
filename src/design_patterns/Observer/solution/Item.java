@@ -6,9 +6,10 @@ import java.util.*;
 import design_patterns.Observer.solution.interfaces.IObservable;
 import design_patterns.Observer.solution.interfaces.IObserver;
 
-public class Item implements IObservable  {
+public class Item implements IObservable<Item> {
     private String name;
     private int quantity;
+    private List<IObserver<Item>> observers = new ArrayList<>();
 
     public Item(String name, int quantity) {
         this.name = name;

@@ -1,0 +1,53 @@
+Decorator Pattern
+
+- Decorator Pattern is used to extend the functioanlity of existing objects 
+- It is used to decrease bloat by hnot having different classes for each functionality being added
+- The scenario in which classes are extended to add different functionality explicitly will results in too my combination of classes
+- This phenomena is called Class Explosion 
+- Where you have too many classes which are just combination of functionalities it's a headache to manage 
+
+########################################
+Solution :
+
+- Decorator pattern rather aims to layer the functionality instead
+- You can wrap an object with some functioanlity
+- Which can inturn be rewrapped to add functionality 
+- This is called decorator pattern 
+
+#####################################
+When to use :
+
+- Prevent something called class explosion 
+- 
+
+#######################################
+Formal Definition :
+The decorator pattern is a structural design pattern used to extend the functionality of objects in a flexible and reusable way. Instead of creating multiple
+- subclasses to add different functionalities, the decorator pattern allows you to "wrap" an object with new behavior dynamically.
+
+Key Concepts:
+-Component Interface: Defines the interface for objects that can have responsibilities added to them dynamically.
+-Concrete Component: The original object to which additional responsibilities can be attached.
+-Decorator: An abstract class that implements the component interface and contains a reference to a component object. It forwards requests to the component and may add additional behavior.
+-Concrete Decorators: Classes that extend the decorator class and add responsibilities to the component.
+
+How It Works:
+
+-Layering Functionality: You can wrap an object with a decorator that adds new functionality. This decorator can then be wrapped with another decorator, and so on.
+
+-Dynamic Composition: This allows for dynamic composition of behavior at runtime, avoiding the need for a large number of subclasses.
+
+##########################################
+Questions :- 
+
+1) Design Coffee Machine 
+
+
+#######################################
+How to actually implements
+
+1) Write a good base class (abstract obj)  -- implement a method in it 
+2) Write decorator class -- re implemet combing both implemetations
+3) In the decorator hass create have an attribute for base object 
+
+DECORATOR == HAS A + IS- A RELATIONSHIP

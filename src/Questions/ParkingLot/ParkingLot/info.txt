@@ -1,0 +1,16 @@
+Design a Parking Lot
+
+Object List
+#################
+- Vehicle -- Vehicle no && vehicle type -- 2 whheler / 4 wheeler
+- Ticket -- entrytime,patkingspot
+- Entrance Gate -- 1  -> findpkngspace(),updateprkngspace(),generateTicket()
+- Parking Spot -- Diffeent Type of Spots -- 2 wheeler/4 wheeler,id,isEmpty,Vehicle,Price,SpotType
+- Payment -- hourly/minute/hybrid ??
+
+`- Exit Gate -- Cost calucluation,free the spot,update the parking spot
+`
+
+Requirement
+#################
+- Parking Lot must be nearest to entrance gate -- Use Min Heap to implement this

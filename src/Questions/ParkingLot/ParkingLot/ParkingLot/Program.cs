@@ -1,0 +1,10 @@
+﻿namespace ParkingLot
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("hehe");
+        }
+    }
+}

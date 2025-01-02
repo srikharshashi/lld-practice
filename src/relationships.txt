@@ -1,0 +1,25 @@
+"Has-A" Relationship (Composition)
+----------------------------------
+Represents ownership or containment between objects
+Indicates that one class contains an object of another class as a member
+Example: A Car has an Engine, Wheels, and Seats
+The relationship implies that:
+The contained object (part) is a component of the container (whole)
+If the container is destroyed, its parts usually are too
+####################################
+"Is-A" Relationship (Inheritance)
+---------------------------------
+Represents a specialization relationship between classes
+Indicates that one class is a type or subset of another class
+Example: A Cat is an Animal, a Savings Account is a Bank Account
+The relationship implies that:
+The derived class (child) inherits properties and behaviors from the base class (parent)
+The child can be used wherever the parent type is expected
+#######################################
+Key Differences
+---------------
+Has-A: Describes what an object has or possesses
+Is-A: Describes what an object is or its type
+Has-A uses composition to build complex objects
+Is-A uses inheritance to share common characteristics
+Think of it like this: A house (Has-A) has rooms, windows, and doors, while a mansion (Is-A) is a type of house.
